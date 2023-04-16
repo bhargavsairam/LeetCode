@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+select t.id as player_id, t.first_login as first_login from (select player_id as id, event_date as first_login,row_number() over ( partition by player_id order by event_date asc) as rank1 from activity) t where rank1 = 1;
