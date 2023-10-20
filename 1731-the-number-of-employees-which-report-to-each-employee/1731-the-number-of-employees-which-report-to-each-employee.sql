@@ -7,5 +7,5 @@ employees e2
 on
 e1.employee_id  = e2.reports_to
 GROUP BY
-e2.reports_to
+e1.employee_id
 ORDER BY e1.employee_id
