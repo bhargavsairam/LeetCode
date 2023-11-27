@@ -14,3 +14,10 @@ class Solution:
             visited_node.add(curr_node)
             curr_node = curr_node.next
         return False
+#slow_pointer, fast_pointer = head
+#while fast_pointer and fast_pointer.next:
+    #slow_pointer = slow_pointer.next
+    #fast_pointer = fast_pointer.next.next
+    #if slow_pointer = fast_pointer:
+        #return True
+#return False
